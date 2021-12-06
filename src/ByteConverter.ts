@@ -1,5 +1,5 @@
 
-type Byte = 0 | 1
+export type Byte = 0 | 1
 
 export class ByteConverter{
 
@@ -26,7 +26,6 @@ export class ByteConverter{
     }
 
     static toNumber(byteArray: Byte[]){
-
         let num = 0;
         for (let i = 0; i < byteArray.length; i++) {
             if (byteArray[i]){
